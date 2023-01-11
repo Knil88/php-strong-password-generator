@@ -12,7 +12,11 @@
     <?php
        session_start();
        $password = $_SESSION['password'];
-       echo "La tua password è: " . $password;
+       echo        ' <h1 class="form-container text-center">
+
+                    La tua Password è :'.$password.'</h1>'
+                                                
+
        
     ?>
 </body>

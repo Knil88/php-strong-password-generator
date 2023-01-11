@@ -24,7 +24,7 @@ session_start()
     </header>
     <div class="container border-1">
        
-        <div>
+        <div class="form-container">
 
         <!-- Creiamo il form che cipermetterà di dare la lunghezza della password -->
 
@@ -45,6 +45,7 @@ session_start()
                 echo "Password generata: " . $password;
                 $_SESSION['password'] = $password;
                 header('Location: password.php');
+                exit;
             }
            
 
