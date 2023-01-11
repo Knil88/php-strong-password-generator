@@ -34,9 +34,17 @@ label{
     color: white;
     font-size: 20px;
     border: none;
-    border-radius: 15px;
+   
     cursor: pointer;
+    transition: all ease 1.5s;
+
   
+}
+.Btn:hover{
+    border-radius: 15px;
+    background-color: rgb(230, 228, 241);
+    color: rgb(202, 13, 13);
+    font-weight: bolder;
 }
 
 
