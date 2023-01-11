@@ -10,33 +10,46 @@
 </head>
 <body>
 
-   
+<?php
 
-    <div class="container">
-        <h1>
+session_start()
+
+
+?>
+   
+    <header class="d-flex justify-content-center">
+         <h1>
              Strong Password Generator   
         </h1>
+    </header>
+    <div class="container border-1">
+       
         <div>
+
+        <!-- Creiamo il form che cipermetterà di dare la lunghezza della password -->
+
         <form method="get">
             <label for="password_length">Lunghezza password:</label>
-            <input type="number" name="password_length" id="password_length">
+            <input type="number" name="password" id="password_length">
             <input type="submit" value="Genera password">
         </form>
         <?php
-        function generate_password($length) {
-            // Array di caratteri possibili per la password
-            $chars = array_merge(range('A', 'Z'), range('a', 'z'), range(0, 9), array('!', '@', '#', '$', '%', '^', '&', '*'));
-            $password = "";
-            for ($i = 0; $i < $length; $i++) {
-                $password .= $chars[array_rand($chars)];
-            }
-            return $password;
-        }
 
-        if (isset($_GET['password_length'])) {
-            $password = generate_password($_GET['password_length']);
-            echo "Password generata: " . $password;
-        }
+           
+
+            //Creiamo la condizione che la variabile $password è uguale alla function e di conseguenza stamperà la password random
+
+            require 'helper.php';
+            if (isset($_GET['password'])) {
+                $password = generate_password($_GET['password']);
+                echo "Password generata: " . $password;
+                $_SESSION['password'] = $password;
+                header('Location: password.php');
+            }
+           
+
+
+            
     ?>
         </div>
     </div>
