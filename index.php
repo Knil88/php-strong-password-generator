@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Password Generator</title>
 </head>
-<body>
+<body class="text-center">
 
 <?php
 
@@ -17,20 +17,20 @@ session_start()
 
 ?>
    
-    <header class="d-flex justify-content-center">
+    <header class="d-flex justify-content-center color-white">
          <h1>
              Strong Password Generator   
         </h1>
     </header>
     <div class="container border-1">
        
-        <div class="form-container">
+        <div class="form-container animate">
 
         <!-- Creiamo il form che cipermetterà di dare la lunghezza della password -->
 
         <form method="get">
             <label for="password_length">Lunghezza password:</label>
-            <input type="number" name="password" id="password_length">
+            <input type="number" required ="1" name="password" id="password_length">
             <input type="submit" value="Genera password">
         </form>
         <?php
