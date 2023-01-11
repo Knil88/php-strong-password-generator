@@ -6,14 +6,41 @@
 }
 body{
     background-color: tomato;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
+    color:white
+
+ 
 
 
 
 }
+label{
+    font-size: large;
+    font-weight: bold;
+}
+
+.number-input{
+
+    padding: 10px 0px;
+    border: none;
+    border-radius: 10px;
+    background-color: gray;
+    color: black;
+    font-weight: 900;
+    outline: none;
+    text-align: center;
+}
+.Btn{
+    background-color: darkslateblue;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+  
+}
+
+
+
 .form-container{
     
         width: 70%;
@@ -23,10 +50,8 @@ body{
         margin: 20px auto;
         border-radius: 12px;
         
+        
 
 }
-.animate {  -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out; }
+
+  

@@ -24,14 +24,16 @@ session_start()
     </header>
     <div class="container border-1">
        
-        <div class="form-container animate">
+        <div class="form-container">
 
         <!-- Creiamo il form che ci permetterà di dare la lunghezza della password -->
 
-        <form method="get">
-            <label for="password_length">Lunghezza password:</label>
-            <input type="number" required ="1" name="password" id="password_length">
-            <input type="submit" value="Genera password">
+        <form method="get" >
+            <label class="d-block" for="password_length">Lunghezza password:</label>
+            <input class="my-2 number-input" type="number" placeholder=" max 15" required="1" min ="0" max="15" name="password" id="password_length" >
+           <div class="text-center">
+           <input class="p-2 Btn" type="submit" value="Genera password">
+           </div>
         </form>
         <?php
 

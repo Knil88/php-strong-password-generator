@@ -15,7 +15,7 @@
        
        echo        ' <h1 class="form-container text-center animate">
 
-                    La tua Password è :'.$password.'</h1>'
+                    La tua Password è '.$password.'</h1>'
                                                 
 
        
