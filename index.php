@@ -26,7 +26,7 @@ session_start()
        
         <div class="form-container animate">
 
-        <!-- Creiamo il form che cipermetterà di dare la lunghezza della password -->
+        <!-- Creiamo il form che ci permetterà di dare la lunghezza della password -->
 
         <form method="get">
             <label for="password_length">Lunghezza password:</label>
